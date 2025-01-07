@@ -31,10 +31,10 @@ for img_path in test_images:
     # Iterate over each result
     for result in results:
         if hasattr(result, 'boxes'):
-            boxes = result.boxes  # Get the bounding boxes
+            boxes = result.boxes  
             sorted_boxes = sorted(boxes, key=lambda box: box.xyxy[0][0])
             for box in sorted_boxes:
-                x1, y1, x2, y2 = map(int, box.xyxy[0])  # Convert to integer coordinates
+                x1, y1, x2, y2 = map(int, box.xyxy[0])  
                 confidence = box.conf[0]
                 class_id = box.cls[0]
                 label = f'{model.names[int(class_id)]} {confidence:.2f}'
@@ -43,7 +43,7 @@ for img_path in test_images:
                 # Draw the bounding box
                 cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
 
-                # Draw the label
+                # Draw the letter
                 (text_width, text_height), baseline = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 2)
                 cv2.rectangle(img, (x1, y1 - text_height - baseline), (x1 + text_width, y1), (0, 255, 0), -1)
                 cv2.putText(img, label, (x1, y1 - baseline), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
