@@ -4,51 +4,6 @@
 
 Este projeto utiliza modelos de aprendizado de máquina baseados no [YOLOv11](caracteres/yolo11n.pt) para realizar o reconhecimento e a detecção de placas veiculares. O repositório está organizado em duas principais pastas: `caracteres` e `placas`, cada uma contendo seus próprios conjuntos de dados, scripts de treinamento e resultados de execução.
 
-## Estrutura do Projeto
-. 
-├── .gitattributes 
-├── .gitignore 
-├── caracteres/ 
-│ ├── dataset/ 
-│ │ ├── data.yaml
-│ │ ├── README.dataset.txt 
-│ │ ├── README.roboflow.txt 
-│ │ ├── test/ 
-│ │ │ ├── images/ 
-│ │ │ ├── labels/ 
-│ │ │ └── output/ 
-│ │ ├── train/ 
-│ │ │ ├── images/
-│ │ │ ├── labels/ 
-│ │ │ └── labels.cache 
-│ │ └── valid/ 
-│ │ ├── images/ 
-│ │ ├── labels/ 
-│ │ └── labels.cache 
-│ ├── retrain.py 
-│ ├── runs/ 
-│ │ └── detect/ 
-│ │ └── train/ 
-│ ├── test.py 
-│ ├── train.py 
-│ └── yolo11n.pt 
-├── datasets.txt 
-├── placas/ 
-│ ├── dataset/ 
-│ │ ├── data.yaml 
-│ │ ├── README.dataset.txt 
-│ │ ├── README.roboflow.txt 
-│ │ ├── test/ 
-│ │ ├── train/ 
-│ │ └── valid/ 
-│ ├── retrain.py 
-│ ├── runs/ 
-│ │ └── detect/ 
-│ ├── test.py 
-│ ├── train.py 
-│ └── yolo11n.pt 
-└── yolo11n.pt
-
 
 ## Dataset
 
