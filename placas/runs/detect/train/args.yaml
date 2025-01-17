@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolo11n.yaml
+model: D:\Github\PlacasDeepLearning\placas\runs/detect/train5/weights/best.pt
 data: D:\Github\PlacasDeepLearning\placas\dataset/data.yaml
-epochs: 10
+epochs: 30
 time: null
 patience: 100
 batch: 16

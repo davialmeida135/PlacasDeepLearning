@@ -9,12 +9,12 @@ def get_last_model():
 
 def main():
     # Load a model
-    #model = YOLO(get_last_model())  # Load a model from a file
-    model = YOLO("yolo11n.yaml")  # build a new model from scratch
+    model = YOLO(get_last_model())  # Load a model from a file
+    #model = YOLO("yolo11n.yaml")  # build a new model from scratch
     self_path = pathlib.Path(__file__).parent.resolve()
-    model_path = os.path.join(self_path, "dataset/data.yaml")
+    data_path = os.path.join(self_path, "dataset2/data.yaml")
     # Use the model
-    results = model.train(data=model_path, epochs=10)  # train the model
+    results = model.train(data=data_path, epochs=15)  # train the model
 
 if __name__ == "__main__":
     main()

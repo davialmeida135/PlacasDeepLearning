@@ -18,7 +18,7 @@ test_images = [os.path.join(test_images_dir, img) for img in os.listdir(test_ima
 # Run predictions and save results
 for img_path in test_images:
     # Run prediction
-    results = model.predict(img_path,conf=0.15)
+    results = model.predict(img_path,conf=0.50)
     
     # Debugging: print the results
     print(f"Predictions for {img_path}:")
