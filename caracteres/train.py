@@ -4,7 +4,7 @@ from ultralytics import YOLO
 #LEVOU UMA HORA
 def get_last_model():
     self_path = pathlib.Path(__file__).parent.resolve()
-    model_path = os.path.join(self_path, "runs/detect/train2/weights/best.pt")
+    model_path = os.path.join(self_path, "runs/detect/train3/weights/best.pt")
     return model_path
 
 def main():
