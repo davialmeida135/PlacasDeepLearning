@@ -1,3 +1,5 @@
 *.pyc
 /wandb
 /placas/wandb
+/saved
+/caracteres/runs/detect
